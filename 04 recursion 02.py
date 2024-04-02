@@ -79,3 +79,13 @@ def fn(i,n):
     
 fn(n,n)
 
+# Sum of first N numbers
+
+print('Sum of first N numbers')
+n=int(input("enter the value :"))
+def fn(i, sum):
+    if (i<1):
+        print(sum)
+        return
+    fn(i-1, sum + i)
+fn(n,0) 
