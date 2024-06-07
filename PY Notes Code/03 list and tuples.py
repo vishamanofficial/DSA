@@ -1,4 +1,4 @@
-# arrauy me hm same type of data store karate hain pr list me hm diffrent type of data print karwa skte hain
+    # arrauy me hm same type of data store karate hain pr list me hm diffrent type of data print karwa skte hain
 student = ["Aman Vishwakarma", 22, 99, "vill dalhanpur post siddiqpur dist jaunpur"]
 print("name of the studnet: ", student[0])
 print("age of the studnet: ", student[1])
@@ -45,7 +45,7 @@ print(list)
 list.reverse()
 print(list)
 # insert element at index 
-list.insert(5,5)
+list.insert(4,5)
 print(list)
 # removes first occurrence of elememnt
 list.remove(1)
@@ -66,10 +66,10 @@ print(tup[1])
 
 # tuple methods
 # returns index of first occurence
-tup.index(656)
-print(tup)
+print(tup.index(656))
+
 # counts total occurance
-tup.count(56)
-print(tup)
+print(tup.count(56))
+
 
 

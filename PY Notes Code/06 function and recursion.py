@@ -14,6 +14,16 @@ def calc_sum(a , b):
 sum = calc_sum(60, 9)
 print(sum)
 
+
+def factorial(n):
+    fact = 1
+    for i in range(1, n+1):
+        fact = fact * i
+    print(fact)
+
+factorial(5)
+
+
 # Recursion
 # a function calles itself
 
@@ -41,3 +51,11 @@ print(factorial(3))
 print(factorial(4))   
 print(factorial(5))
 
+print('sum of first n natural numbers')
+
+def fn(sum):
+    if (sum<1):
+        return 
+    fn(sum-1) + sum
+
+print(fn(3))

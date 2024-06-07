@@ -19,13 +19,13 @@ print(student["name"])
 print(student["score"]["math"])
 
 # Dictionary Methods
-print
+
 # student.keys( ) #returns all keys
 print(student.keys())
 # student.items( ) #returns all (key, val) pairs as tuples
 print(student.items())
 # student.update( newDict ) #inserts the specified items to the dictionary
-print(student.update({"age": 22}))
+print(student.update({"age": 23}))
 # student.values( ) #returns all values
 print(student.values())
 # student.get( “key““ ) #returns the key according to value

@@ -70,8 +70,14 @@ else:
 # range( )
 # range( start?, stop, step?)
 # Range functions returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
+for el in range(5):
+    print(el)
+for el in range(1,6):
+    print(el)
+for el in range(1,5,2):
+    print(el)
+
+
 
 # pass Statement
 # pass is a null statement that does nothing. It is used as a placeholder for future code.
-
-
