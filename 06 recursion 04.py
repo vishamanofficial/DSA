@@ -1,6 +1,6 @@
 # reverse an array
 
-marks = [ 90, 54, 45, 46, 55]
+# marks = [ 90, 54, 45, 46, 55]
 # def fn(i):
 #     if(i>=len(marks)/2):
 #         return

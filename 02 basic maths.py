@@ -1,41 +1,9 @@
-# # extraction of digit or count of digit
+# count of digit
 
-import math
-
-def roots(a, b, c):
-    if a == 0:
-        print("Invalid")
-        return
-
-    d = b * b - 4 * a * c
-    sqrt_val = math.sqrt(abs(d))
-
-    if d > 0:
-        print("Roots are real and different")
-        root1 = (-b + sqrt_val) / (2 * a)
-        root2 = (-b - sqrt_val) / (2 * a)
-        print(f"{root1}\n{root2}")
-    elif d == 0:
-        print("Roots are real and the same")
-        root1 = -b / (2 * a)
-        root2 = -b / (2 * a)
-        print(f"{root1}\n{root2}")
-    else:
-        print("Roots are complex")
-        real_part = -b / (2 * a)
-        imaginary_part = sqrt_val / (2 * a)
-        print(f"{real_part} + i{imaginary_part}\n{real_part} - i{imaginary_part}")
-
-if __name__ == "__main__":
-    a = 1
-    b = -3
-    c = -10
-    roots(a, b, c)
-
-# def evenlyDivides (N):
+# def evenlyDivides (n):
 #         count = 0
-#         while(N>0):
-#             N//=10
+#         while(n>0):
+#             n//=10
 #             count+=1
 #         print(count)
 
