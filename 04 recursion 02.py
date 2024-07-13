@@ -42,7 +42,6 @@ def fn(i,n):
 fn(i,n)
 
 # print 1 to n using recursion 
-
 i=0
 n=int(input("enter the value :"))
 def fn(i,n):
@@ -51,7 +50,7 @@ def fn(i,n):
     print(i)
     fn(i+1, n)
 
-fn(i,n)
+fn(n,n)
 
 # print n to 1 using recursion
 

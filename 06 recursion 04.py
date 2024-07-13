@@ -4,7 +4,6 @@
 # def fn(i):
 #     if(i>=len(marks)/2):
 #         return
-    
 #     marks[i], marks[len(marks)-i-1] = marks[len(marks)-i-1], marks[i]
 #     fn(len(marks) + 1 )
 # fn(0)
