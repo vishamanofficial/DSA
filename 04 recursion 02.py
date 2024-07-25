@@ -26,65 +26,61 @@
 #     i += 1
 #     print('hello', i)
 #     greet()
-
 # greet()
 
 # print name five times
 
-i=1
-n=int(input("enter the value :"))
-def fn(i,n):
-    if (i>n):
-        return
-    print("aman")
-    fn(i+1, n)
+# i=1
+# n=int(input("enter the value :"))
+# def fn(i,n):
+#     if (i>n):
+#         return
+#     print("aman")
+#     fn(i+1, n)
 
-fn(i,n)
+# fn(i,n)
 
 # print 1 to n using recursion 
-i=0
-n=int(input("enter the value :"))
-def fn(i,n):
-    if (i>n):
-        return
-    print(i)
-    fn(i+1, n)
-
-fn(n,n)
+# i=0
+# n=int(input("enter the value :"))
+# def fn(i,n):
+#     if (i>n):
+#         return
+#     print(i)
+#     fn(i+1, n)
+# fn(n,n)
 
 # print n to 1 using recursion
 
-print('print n to 1 using recursion')
-i=0
-n=int(input("enter the value :"))
-def fn(i,n):
-    if (i<1):
-        return
-    print(i)
-    fn(i-1, n)
-
-fn(n,n)
+# print('print n to 1 using recursion')
+# n=int(input("enter the value :"))
+# def fn(n):
+#     if (n<1):
+#         return
+#     print(n)
+#     fn(n-1)
+# fn(n)
 
 # print 1 to n using recursion and backyrack
 
-print('print 1 to n using recursion and backyrack')
-i=0
-n=int(input("enter the value :"))
-def fn(i,n):
-    if (i<1):
-        return
-    fn(i-1, n)
-    print(i)
+# print('print 1 to n using recursion and backyrack')
+# i=0
+# n=int(input("enter the value :"))
+# def fn(i,n):
+#     if (i<1):
+#         return
+#     fn(i-1, n)
+#     print(i)
     
-fn(n,n)
+# fn(n,n)
 
 # Sum of first N numbers
 
-print('Sum of first N numbers')
-n=int(input("enter the value :"))
-def fn(i, sum):
-    if (i<1):
-        print(sum)
-        return
-    fn(i-1, sum + i)
-fn(n,0) 
+# print('Sum of first N numbers')
+# n=int(input("enter the value :"))
+# def fn(i, sum):
+#     if (i<1):
+#         print(sum)
+#         return
+#     fn(i-1, sum + i)
+# fn(n,0) 

@@ -40,7 +40,7 @@
 # # reverse a number
 
 # reverseNum = 0
-# x=12345
+# x=44100
 # while( x != 0 ):
 #     lastdigit = x%10
 #     x//=10
