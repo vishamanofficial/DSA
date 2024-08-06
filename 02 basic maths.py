@@ -1,32 +1,3 @@
-# count of digit
-
-# def evenlyDivides (n):
-#         count = 0
-#         while(n>0):
-#             n//=10
-#             count+=1
-#         print(count)
-
-# evenlyDivides(7789)
-
-
-# def extract(n):
-#       while(n>0):
-#             ld = n%10
-#             print(ld)
-#             n//=10
-# extract(7789)
-
-# def count_digits(n):
-#        count=0
-#        x=n
-#        while( x != 0 ):
-#                x//=10
-#                count+=1
-#        return count
-
-# n = 12345
-# print("Number of digits in ",n," is ",count_digits(n)) 
 
 # # second method simple
 
@@ -36,6 +7,20 @@
 #     x//=10
 #     count+=1
 # print(count)
+
+
+# def evenlyDivides (N):
+#         n = str(N)
+#         count = 0
+#         for i in n:
+#             if int(i)==0:
+#                 continue
+#             elif N%int(i)==0:
+#                 count+=1
+#         return count
+
+# print(evenlyDivides(7789))
+
 
 # # reverse a number
 
@@ -47,20 +32,34 @@
 #     reverseNum = reverseNum*10 + lastdigit
 # print(reverseNum)
 
+# leetcode 
 # def reverse(x):
+#     # Initialize an empty string to store the reversed number and set the sign to positive
 #     y = ''
 #     sign = 1
+
+#     # Iterate through each character in the string representation of the input number
 #     for i in str(x):
-#         if i == '-':
+#         if i == '-':  # If the character is a minus sign, set the sign to negative
 #             sign = -1
-#         else:
+#         else:  # Otherwise, add the character to the reversed string
 #             y += i
+
+#     # Reverse the string, convert it to an integer, and apply the sign
 #     y = sign * int(y[::-1])
-#     if y < -(2 ** 31) or y >(2**31 - 1):
+
+#     # Check for overflow and return 0 if the reversed number is out of 32-bit signed integer range
+#     if y < -(2 ** 31) or y > (2 ** 31 - 1):
 #         return 0
-#     print (y)
-#     return reverse
-# reverse(123)    
+
+#     # Return the reversed number
+#     return y
+
+
+# print(reverse(123))  # Output: 321
+# print(reverse(-123))  # Output: -321
+# print(reverse(120))  # Output: 21
+  
 
 # # check palindrome
 
@@ -75,6 +74,20 @@
 #       print("Palindrome")
 # else:
 #       print("Not a palindrome")
+
+# leetcode 
+
+# def isPalindrome(x):
+#     if x < 0:
+#         return False
+#     reversed_num = 0
+#     dup = x
+#     while dup != 0:
+#         digit = dup % 10
+#         reversed_num = reversed_num * 10 + digit
+#         dup //= 10
+#     return reversed_num == x
+# print(isPalindrome(121))
 
 # # armstrong numbers
       
@@ -92,10 +105,35 @@
 
 # # print all divisors
 
-# n = 35
+# n = 4
 # for i in range(1,n):
 #       if( n % i==0 ):
 #             print(i)
+
+def sumOfDivisors(N):
+    # Initialize the total sum to 0
+    total_sum = 0
+
+    # Loop through each number from 1 to N
+    for i in range(1, N + 1):
+        # Calculate the sum of divisors of i
+        sum_divisors = 0
+        for j in range(1, i + 1):
+            if i % j == 0:  # If j is a divisor of i
+                sum_divisors += j  # Add j to the sum of divisors
+
+        # Add the sum of divisors of i to the total sum
+        total_sum += sum_divisors
+
+    # Return the total sum of the sum of divisors for all numbers from 1 to N
+    return total_sum
+
+# Example usage:
+N = 4
+print(sumOfDivisors(N))  # Output: 15
+# N = 5
+# print(sumOfDivisors(N))  # Output: 21
+
 
 # # check for prime 
 
