@@ -3,13 +3,13 @@
 
 # count = 0
 # x=7777
-# while( x != 0 ):
+# while( x > 0 ):
 #     x//=10
 #     count+=1
 # print(count)
 
 
-# def evenlyDivides (N):
+# def evenlyDivides(N):
 #         n = str(N)
 #         count = 0
 #         for i in n:
@@ -18,7 +18,6 @@
 #             elif N%int(i)==0:
 #                 count+=1
 #         return count
-
 # print(evenlyDivides(7789))
 
 
@@ -32,7 +31,7 @@
 #     reverseNum = reverseNum*10 + lastdigit
 # print(reverseNum)
 
-# leetcode 
+# # leetcode 
 # def reverse(x):
 #     # Initialize an empty string to store the reversed number and set the sign to positive
 #     y = ''
@@ -54,7 +53,6 @@
 
 #     # Return the reversed number
 #     return y
-
 
 # print(reverse(123))  # Output: 321
 # print(reverse(-123))  # Output: -321
