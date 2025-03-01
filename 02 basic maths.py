@@ -57,11 +57,12 @@
 # print(reverse(123))  # Output: 321
 # print(reverse(-123))  # Output: -321
 # print(reverse(120))  # Output: 21
-  
+
 
 # # check palindrome
 
 # n = 1221
+# print(n)
 # revNum = 0
 # dup = n
 # while (n>0):
@@ -89,48 +90,46 @@
 
 # # armstrong numbers
       
-# n = 371
-# dup = n
-# sum = 0
-# while (n>0):
-#       ld = n%10
-#       sum = sum + (ld*ld*ld)
-#       n//=10
-# if(sum==dup):
-#       print("Armstrong")
-# else:
-#       print("Not a Armstrong")
+# def armstrongNumber(n):
+#     dup = n
+#     sum = 0
+#     while (n>0):
+#         ld = n%10
+#         sum = sum + (ld*ld*ld)
+#         n//=10
+#     if(sum==dup):
+#         print("Armstrong")
+#     else:
+#         print("Not a Armstrong")
+# armstrongNumber(371)
 
 # # print all divisors
 
 # n = 4
-# for i in range(1,n):
+# for i in range(1,n+1):
 #       if( n % i==0 ):
 #             print(i)
 
-# def sumOfDivisors(N):
-#     # Initialize the total sum to 0
-#     total_sum = 0
+# x=5
+# for i in range(1, x+1):
+#      for j in range(1, i+1):
+#           if i % j == 0:
+#                print(j)
 
-#     # Loop through each number from 1 to N
-#     for i in range(1, N + 1):
-#         # Calculate the sum of divisors of i
-#         sum_divisors = 0
-#         for j in range(1, i + 1):
-#             if i % j == 0:  # If j is a divisor of i
-#                 sum_divisors += j  # Add j to the sum of divisors
+# sum of all divisors
 
-#         # Add the sum of divisors of i to the total sum
-#         total_sum += sum_divisors
+def sumOfDivisors(N):
+    total_sum = 0
+    for i in range(1, N + 1):
+        sum_divisors = 0
+        for j in range(1, i + 1):
+            if i % j == 0:
+                sum_divisors += j
+        total_sum += sum_divisors
+    return total_sum
+print(sumOfDivisors(4))
 
-#     # Return the total sum of the sum of divisors for all numbers from 1 to N
-#     return total_sum
 
-# # Example usage:
-# N = 4
-# print(sumOfDivisors(N))  # Output: 15
-# # N = 5
-# # print(sumOfDivisors(N))  # Output: 21
 
 
 # # check for prime 
