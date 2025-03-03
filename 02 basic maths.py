@@ -44,6 +44,7 @@ def reverse(x):
         else:  # Otherwise, add the character to the reversed string
             y += i
 
+
     # Reverse the string, convert it to an integer, and apply the sign
     y = sign * int(y[::-1])
 
