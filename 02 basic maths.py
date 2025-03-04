@@ -120,7 +120,6 @@ def print_divisors(n):
             divisors.append(i)
             if i != n // i:
                 divisors.append(n // i)
-    
     divisors.sort()
     for divisor in divisors:
         print(divisor)
