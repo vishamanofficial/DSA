@@ -32,32 +32,31 @@
 # print(reverseNum)
 
 # # leetcode 
-def reverse(x):
-    # Initialize an empty string to store the reversed number and set the sign to positive
-    y = ''
-    sign = 1
+# def reverse(x):
+#     # Initialize an empty string to store the reversed number and set the sign to positive
+#     y = ''
+#     sign = 1
 
-    # Iterate through each character in the string representation of the input number
-    for i in str(x):
-        if i == '-':  # If the character is a minus sign, set the sign to negative
-            sign = -1
-        else:  # Otherwise, add the character to the reversed string
-            y += i
+#     # Iterate through each character in the string representation of the input number
+#     for i in str(x):
+#         if i == '-':  # If the character is a minus sign, set the sign to negative
+#             sign = -1
+#         else:  # Otherwise, add the character to the reversed string
+#             y += i
 
+#     # Reverse the string, convert it to an integer, and apply the sign
+#     y = sign * int(y[::-1])
 
-    # Reverse the string, convert it to an integer, and apply the sign
-    y = sign * int(y[::-1])
+#     # Check for overflow and return 0 if the reversed number is out of 32-bit signed integer range
+#     if y < -(2 ** 31) or y > (2 ** 31 - 1):
+#         return 0
 
-    # Check for overflow and return 0 if the reversed number is out of 32-bit signed integer range
-    if y < -(2 ** 31) or y > (2 ** 31 - 1):
-        return 0
+#     # Return the reversed number
+#     return y
 
-    # Return the reversed number
-    return y
-
-print(reverse(123))  # Output: 321
-print(reverse(-123))  # Output: -321
-print(reverse(120))  # Output: 21
+# print(reverse(123))  # Output: 321
+# print(reverse(-123))  # Output: -321
+# print(reverse(120))  # Output: 21
 
 
 # # check palindrome
@@ -106,29 +105,42 @@ print(reverse(120))  # Output: 21
 
 # # print all divisors
 
-# n = 4
+# n = 36
 # for i in range(1,n+1):
 #       if( n % i==0 ):
 #             print(i)
+# this has time complexity of O(n)
 
-# x=5
-# for i in range(1, x+1):
-#      for j in range(1, i+1):
-#           if i % j == 0:
-#                print(j)
+import math
+
+def print_divisors(n):
+    divisors = []
+    for i in range(1, int(math.sqrt(n)) + 1):
+        if n % i == 0:
+            divisors.append(i)
+            if i != n // i:
+                divisors.append(n // i)
+    
+    divisors.sort()
+    for divisor in divisors:
+        print(divisor)
+
+# Example usage
+n = int(input("Enter a number: "))
+print_divisors(n)
 
 # sum of all divisors
 
-def sumOfDivisors(N):
-    total_sum = 0
-    for i in range(1, N + 1):
-        sum_divisors = 0
-        for j in range(1, i + 1):
-            if i % j == 0:
-                sum_divisors += j
-        total_sum += sum_divisors
-    return total_sum
-print(sumOfDivisors(4))
+# def sumOfDivisors(N):
+#     total_sum = 0
+#     for i in range(1, N + 1):
+#         sum_divisors = 0
+#         for j in range(1, i + 1):
+#             if i % j == 0:
+#                 sum_divisors += j
+#         total_sum += sum_divisors
+#     return total_sum
+# print(sumOfDivisors(4))
 
 
 
