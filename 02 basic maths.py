@@ -111,22 +111,22 @@
 #             print(i)
 # this has time complexity of O(n)
 
-import math
+# import math
 
-def print_divisors(n):
-    divisors = []
-    for i in range(1, int(math.sqrt(n)) + 1):
-        if n % i == 0:
-            divisors.append(i)
-            if i != n // i:
-                divisors.append(n // i)
-    divisors.sort()
-    for divisor in divisors:
-        print(divisor)
+# def print_divisors(n):
+#     divisors = []
+#     for i in range(1, int(math.sqrt(n)) + 1):
+#         if n % i == 0:
+#             divisors.append(i)
+#             if i != n // i:
+#                 divisors.append(n // i)
+#     divisors.sort()
+#     for divisor in divisors:
+#         print(divisor)
 
-# Example usage
-n = int(input("Enter a number: "))
-print_divisors(n)
+# # Example usage
+# n = int(input("Enter a number: "))
+# print_divisors(n)
 
 # sum of all divisors
 
@@ -140,6 +140,15 @@ print_divisors(n)
 #         total_sum += sum_divisors
 #     return total_sum
 # print(sumOfDivisors(4))
+
+
+def sumOfDivisors(N):
+    total_sum = 0
+    for i in range(1, N + 1):  
+        total_sum += i * (N // i)  # Each number i appears (N // i) times as a divisor
+    print(total_sum)
+print(sumOfDivisors(4))  # Output: 15
+
 
 
 
