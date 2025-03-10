@@ -1,10 +1,10 @@
 # it start a infinite loop and then stack overflow happens
 
-# def Print(n):
-#     print("aman",n)
-#     print("backchodi")
-#     Print(0) 
-# Print(1)
+def Print(n):
+    print("aman",n)
+    print("backchodi")
+    Print(0) 
+Print(1)
 
 
 # The selected code defines a function called greet(). This function has a loop that increments the variable i by 1 and prints "hello" followed by the current value of i. Then, it calls the greet() function again, repeating the process.
