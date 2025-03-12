@@ -8,6 +8,7 @@ def fn( i , sum):
     fn(i-1, sum + i)
 fn(10,0)
 
+
 def fn1(n):
     if (n==0):
         return 0
