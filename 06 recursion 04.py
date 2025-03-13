@@ -10,6 +10,7 @@
 
 # print(marks)
 
+
 # def fn(l ,r ):
 #     if ( l >= r ): return
 #     marks[l], marks[r] = marks[r], marks[l]
