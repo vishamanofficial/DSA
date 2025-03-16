@@ -40,13 +40,13 @@
 #         print(arr[i], count)
 
 
-if __name__ == "__main__":
-    arr = [10,5,10,15,10,5]
-    n = len(arr)
-    countFreq(arr, n)
+# if __name__ == "__main__":
+#     arr = [10,5,10,15,10,5]
+#     n = len(arr)
+#     countFreq(arr, n)
 
 
-import math
-n=int(input())
-k=(1<< int(math.log2(n))+1)-1
-print(n^k)
+# import math
+# n=int(input())
+# k=(1<< int(math.log2(n))+1)-1
+# print(n^k)
