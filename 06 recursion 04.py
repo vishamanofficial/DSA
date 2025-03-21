@@ -10,6 +10,7 @@
 
 # print(marks)
 
+
 # def fn(l ,r ):
 #     if ( l >= r ): return
 #     marks[l], marks[r] = marks[r], marks[l]
@@ -42,16 +43,16 @@
 #         return newStr == newStr[::-1]
 
 
-class Solution(object):
-    newArray = {}
-    def fib(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
-        if n == 0: return 0
-        if n == 1: return 1
-        if n in self.newArray:return self.newArray[n]
-        result = self.fib(n-1) + self.fib(n-2)
-        self.newArray[n] = result
-        return result
+# class Solution(object):
+#     newArray = {}
+#     def fib(self, n):
+#         """
+#         :type n: int
+#         :rtype: int
+#         """
+#         if n == 0: return 0
+#         if n == 1: return 1
+#         if n in self.newArray:return self.newArray[n]
+#         result = self.fib(n-1) + self.fib(n-2)
+#         self.newArray[n] = result
+#         return result
