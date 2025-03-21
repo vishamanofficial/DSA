@@ -17,14 +17,14 @@
 
 # To fix this, you can increase the recursion limit by calling sys.setrecursionlimit(n) where n is the desired recursion limit. In this case, increasing the recursion limit to 10000 should fix the stack overflow error.
 
-import sys 
-sys.setrecursionlimit(200)
+# import sys 
+# sys.setrecursionlimit(200)
 
-i = 0
-def greet():
-    global i
-    i += 1
-    print('hello', i)
+# i = 0
+# def greet():
+#     global i
+#     i += 1
+#     print('hello', i)
 #     greet()
 
 # greet()
