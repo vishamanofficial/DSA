@@ -36,7 +36,6 @@
 #         return
 #     print("aman")
 #     fn(i+1, n)
-
 # fn(i,n)
 
 # print 1 to n using recursion 
