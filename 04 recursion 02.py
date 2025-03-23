@@ -38,6 +38,14 @@
 #     fn(i+1, n)
 # fn(i,n)
 
+def printNos(n):
+    i=0
+    if i>n:
+        return
+    print(i)
+    printNos(i+1)
+printNos(5)
+
 # print 1 to n using recursion 
 # i=0
 # n=int(input("enter the value :"))
