@@ -1,8 +1,7 @@
-i=1
 n=int(input("enter the value :"))
-def fn(i,n):
-    if (i>n):
+def fn(n):
+    if (n<1):
         return
-    print("aman")
-    fn(i+1, n)
-fn(i,n)
+    print(n)
+    fn(n-1)
+fn(n)

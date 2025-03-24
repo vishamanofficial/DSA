@@ -38,13 +38,30 @@
 #     fn(i+1, n)
 # fn(i,n)
 
-def printNos(n):
-    i=0
-    if i>n:
-        return
-    print(i)
-    printNos(i+1)
-printNos(5)
+# def printNos(n):
+#     i=0
+#     if i>n:
+#         return
+#     print(i)
+#     printNos(i+1)
+# printNos(5)
+
+
+
+# def printNos(i,n):
+#     if i>n:
+#         return
+#     print(i)
+#     printNos(i+1,n)
+# printNos(1,5)
+
+# def fn(n):
+#     if n<1:
+#         return
+#     fn(n-1)
+#     print(n, end=" ")
+# fn(5)
+       
 
 # print 1 to n using recursion 
 # i=0
@@ -63,7 +80,7 @@ printNos(5)
 # def fn(n):
 #     if (n<1):
 #         return
-#     print(n)
+#     print(n, end=' ')
 #     fn(n-1)
 # fn(n)
 
@@ -77,7 +94,6 @@ printNos(5)
 #         return
 #     fn(i-1, n)
 #     print(i)
-    
 # fn(n,n)
 
 # Sum of first N numbers
