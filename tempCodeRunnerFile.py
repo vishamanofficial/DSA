@@ -1,7 +1,7 @@
-n=int(input("enter the value :"))
-def fn(n):
-    if (n<1):
-        return
-    print(n)
-    fn(n-1)
-fn(n)
+def fn(l ,r ):
+    if ( l >= r ): return
+    marks[l], marks[r] = marks[r], marks[l]
+    fn(l+1, r-1)
+fn(0, len(marks)-1)
+
+print(marks)

@@ -10,14 +10,14 @@
 
 # print(marks)
 
+marks = [ 90, 54, 45, 46, 55]
+def fn(l ,r ):
+    if ( l >= r ): return
+    marks[l], marks[r] = marks[r], marks[l]
+    fn(l+1, r-1)
+fn(0, len(marks)-1)
 
-# def fn(l ,r ):
-#     if ( l >= r ): return
-#     marks[l], marks[r] = marks[r], marks[l]
-#     fn(l+1, r-1)
-# fn(0, len(marks)-1)
-
-# print(marks)
+print(marks)
 
 # string palindrome 
 
