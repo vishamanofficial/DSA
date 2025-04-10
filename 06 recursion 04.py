@@ -56,3 +56,13 @@
 #         result = self.fib(n-1) + self.fib(n-2)
 #         self.newArray[n] = result
 #         return result
+
+
+
+def fib(n):
+    if n <= 1:
+        return n
+    return fib(n - 1) + fib(n - 2)
+
+ans = fib(6)
+print(ans)
