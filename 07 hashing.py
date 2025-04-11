@@ -17,7 +17,6 @@ n = len(arr)
 hash = [0] * 13
 for i in range(n):
     hash[arr[i]] += 1
-
 # queries
 q = int(input("Kitni queries karni hain? "))
 while q > 0:
