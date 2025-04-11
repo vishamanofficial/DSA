@@ -1,27 +1,30 @@
-arr = [1, 2, 3, 1, 2, 2, 1]
-def fn(number):
-    count = 0
-    for i in arr:
-        if i == number:
-            count += 1
-    return count
-print(fn(1))
+# arr = [1, 2, 3, 1, 2, 2, 1]
+# def fn(number):
+#     count = 0
+#     for i in arr:
+#         if i == number:
+#             count += 1
+#     return count
+# print(fn(1))
 
 
 # n = int(input())
 # arr = list(map(int, input().split()))
+arr = [1, 2, 2, 3, 1]
+n = len(arr)
 
-# # precompute
-# hash = [0] * 13
-# for i in range(n):
-#     hash[arr[i]] += 1
+# precompute
+hash = [0] * 13
+for i in range(n):
+    hash[arr[i]] += 1
 
-# q = int(input())
-# while q > 0:
-#     number = int(input())
-#     # fetching
-#     print(hash[number])
-#     q -= 1
+# queries
+q = int(input("Kitni queries karni hain? "))
+while q > 0:
+    number = int(input("Kaunsa number check karna hai? "))
+    print(f"{number} occurs {hash[number]} times")
+    q -= 1
+
 
 
 # Count frequency of each element in the array
