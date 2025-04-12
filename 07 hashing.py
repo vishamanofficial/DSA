@@ -40,6 +40,30 @@
 
 
 
+# python dict 
+arr = [1, 2, 2, 3, 1]
+n = len(arr)
+
+# precompute
+mpp = {}
+for num in arr:
+    if num in mpp:
+        mpp[num] += 1
+    else:
+        mpp[num] = 1
+
+# print frequency map (optional, jaise C++ mein print kiya tha)
+for key in mpp:
+    print(f"{key} -> {mpp[key]}")
+
+# handle queries
+q = int(input("Kitni queries karni hain? "))
+for _ in range(q):
+    number = int(input("Kaunsa number check karna hai? "))
+    print(f"{number} occurs {mpp.get(number, 0)} times")
+
+
+
 
 # Count frequency of each element in the array
 
