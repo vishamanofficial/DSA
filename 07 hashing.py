@@ -10,19 +10,34 @@
 
 # n = int(input())
 # arr = list(map(int, input().split()))
-arr = [1, 2, 2, 3, 1]
-n = len(arr)
+# arr = [1, 2, 2, 3, 1]
+# n = len(arr)
 
-# precompute
-hash = [0] * 13
-for i in range(n):
-    hash[arr[i]] += 1
-# queries
-q = int(input("Kitni queries karni hain? "))
-while q > 0:
-    number = int(input("Kaunsa number check karna hai? "))
-    print(f"{number} occurs {hash[number]} times")
-    q -= 1
+# # precompute
+# hash = [0] * 13
+# for i in range(n):
+#     hash[arr[i]] += 1
+# # queries
+# q = int(input("Kitni queries karni hain? "))
+# while q > 0:
+#     number = int(input("Kaunsa number check karna hai? "))
+#     print(f"{number} occurs {hash[number]} times")
+#     q -= 1
+
+
+# s = input("String daalo: ")  # e.g., aabchb
+
+# # precompute
+# hash = [0] * 256  # covers all ASCII characters
+# for ch in s:
+#     hash[ord(ch)] += 1
+
+# # queries
+# q = int(input("Kitni queries karni hain? "))
+# for i in range(q):
+#     ch = input("Kaunsa character check karna hai? ")[0]  # first character only
+#     print(hash[ord(ch)])
+
 
 
 
