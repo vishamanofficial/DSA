@@ -1,14 +1,24 @@
+# Extraction of digits from a number
+# def extract(n):
+#     while n > 0:
+#         last_digit = n % 10
+#         print(last_digit, end=' ')
+#         n //= 10
+# extract(12345)
 
-# # second method simple
+# Count the number of digits in a number
 
 # count = 0
-# x=7777
-# while( x > 0 ):
-#     x//=10
-#     count+=1
-# print(count)
+# def countDigits(n):
+#     global count
+#     if n == 0:
+#         return count
+#     else:
+#         count += 1
+#         return countDigits(n // 10)
+# print(countDigits(12345))
 
-
+# Evenly divides a number
 # def evenlyDivides(N):
 #         n = str(N)
 #         count = 0
@@ -18,11 +28,10 @@
 #             elif N%int(i)==0:
 #                 count+=1
 #         return count
-# print(evenlyDivides(7789))
+# print(evenlyDivides(7788))
 
 
 # # reverse a number
-
 # reverseNum = 0
 # x=44100
 # while( x != 0 ):
@@ -59,23 +68,20 @@
 # print(reverse(120))  # Output: 21
 
 
-# # check palindrome
-
+# check palindrome
 # n = 1221
-# print(n)
 # revNum = 0
 # dup = n
-# while (n>0):
-#       ld = n%10
-#       revNum = revNum*10 + ld
-#       n = n//10
-# if(dup==revNum):
-#       print("Palindrome")
+# while (n > 0):
+#     ld = n % 10
+#     revNum = revNum * 10 + ld
+#     n //= 10
+# if dup == revNum:
+#     print("Palindrome")
 # else:
-#       print("Not a palindrome")
+#     print("Not a Palindrome")
 
 # leetcode 
-
 # def isPalindrome(x):
 #     if x < 0:
 #         return False
@@ -88,23 +94,21 @@
 #     return reversed_num == x
 # print(isPalindrome(121))
 
-# # armstrong numbers
-      
+# armstrong numbers 
 # def armstrongNumber(n):
 #     dup = n
 #     sum = 0
-#     while (n>0):
-#         ld = n%10
-#         sum = sum + (ld*ld*ld)
-#         n//=10
-#     if(sum==dup):
+#     while (n > 0):
+#         ld = n % 10
+#         sum = sum + (ld * ld * ld)
+#         n //= 10
+#     if sum == dup:
 #         print("Armstrong")
 #     else:
 #         print("Not a Armstrong")
 # armstrongNumber(371)
 
 # # print all divisors
-
 # n = 36
 # for i in range(1,n+1):
 #       if( n % i==0 ):
@@ -112,7 +116,6 @@
 # this has time complexity of O(n)
 
 # import math
-
 # def print_divisors(n):
 #     divisors = []
 #     for i in range(1, int(math.sqrt(n)) + 1):
@@ -123,13 +126,10 @@
 #     divisors.sort()
 #     for divisor in divisors:
 #         print(divisor)
-
-# # Example usage
 # n = int(input("Enter a number: "))
 # print_divisors(n)
 
 # sum of all divisors
-
 # def sumOfDivisors(N):
 #     total_sum = 0
 #     for i in range(1, N + 1):
@@ -149,12 +149,7 @@
 #     print(total_sum)
 # print(sumOfDivisors(4))
 
-
-
-
-
 # # check for prime 
-
 # n = 8
 # for i in range(2,n):
 #     if (n%i==0):
@@ -162,6 +157,7 @@
 #       break
 # else:
 #       print('prime number')
+
 
 # def is_prime(n):
 #     # If n is less than 2, it's not a prime number
